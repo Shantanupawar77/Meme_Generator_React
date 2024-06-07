@@ -1,0 +1,162 @@
+/* Reset box-sizing to border-box for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Set font family and remove default margin from body */
+body {
+    font-family: "Karla", sans-serif;
+    margin: 0;
+}
+
+/* Add padding to the main element */
+main {
+    padding: 10px;
+}
+
+/* Style for header */
+.header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    padding: 20px;
+}
+
+/* Style for header image */
+.header--image {
+    height: 100%;
+    margin-right: 6px;
+}
+
+/* Style for header title */
+.header--title {
+    font-size: 1.25rem;
+    margin-right: auto;
+}
+
+/* Style for header project info */
+.header--project {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* Style for form */
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Change grid template to two columns */
+    gap: 17px;
+    margin-bottom: 10px;
+}
+
+/* Style for form input fields */
+.form--input {
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    padding: 5px;
+    /* Add padding for better appearance */
+}
+
+/* Style for form button */
+.form--button {
+    grid-column: 1 / -1;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    /* Add padding for better appearance */
+}
+
+/* Style for meme container */
+.meme {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for meme image */
+.meme--image {
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+/* Style for meme text */
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+/* Style for bottom meme text */
+.bottom {
+    bottom: 0;
+}
+
+/* Style for top meme text */
+.top {
+    top: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+    /* Adjustments for header */
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .header--image {
+        margin-bottom: 10px;
+    }
+
+    .header--title {
+        font-size: 1.1rem;
+    }
+
+    .header--project {
+        font-size: 0.7rem;
+    }
+
+    /* Adjustments for form */
+    .form {
+        grid-template-columns: 1fr;
+        /* Change grid to single column */
+    }
+
+    .form--input {
+        margin-bottom: 10px;
+    }
+
+    /* Adjustments for meme text size */
+    .meme--text {
+        font-size: 1.5em;
+    }
+}
