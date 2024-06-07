@@ -11,7 +11,7 @@ This is a simple web application that allows users to generate memes by adding c
 
 ## Live Demo
 
-You can access the live demo of this project [here](https://shantanupawar77.github.io/ToggleBoxUsingReact/).
+You can access the live demo of this project [here](https://shantanupawar77.github.io/Meme_Generator_React/).
 
 ## Technologies Used
 
